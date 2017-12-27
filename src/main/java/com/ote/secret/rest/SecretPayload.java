@@ -1,4 +1,4 @@
-package com.ote.secret.rest.payload;
+package com.ote.secret.rest;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

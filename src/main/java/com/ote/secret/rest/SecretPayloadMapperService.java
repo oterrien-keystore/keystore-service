@@ -1,13 +1,7 @@
 package com.ote.secret.rest;
 
 import com.ote.domain.secret.api.model.Secret;
-import com.ote.secret.peristence.SecretEntity;
-import com.ote.secret.peristence.SecretJpaRepository;
-import com.ote.secret.rest.payload.SecretPayload;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class SecretPayloadMapperService {

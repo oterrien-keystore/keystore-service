@@ -1,7 +1,6 @@
 package com.ote.secret.peristence;
 
 import com.ote.domain.secret.api.model.Secret;
-import com.ote.secret.rest.payload.SecretPayload;
 import org.springframework.stereotype.Service;
 
 @Service

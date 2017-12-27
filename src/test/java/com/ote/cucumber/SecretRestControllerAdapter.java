@@ -2,7 +2,7 @@ package com.ote.cucumber;
 
 import com.ote.JsonUtils;
 import com.ote.domain.secret.business.NotFoundException;
-import com.ote.secret.rest.payload.SecretPayload;
+import com.ote.secret.rest.SecretPayload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
