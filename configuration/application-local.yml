@@ -7,10 +7,8 @@ server:
   port: ${PORT:8080}
 
 spring:
-  application:
-    name: Secret-Service
-  main:
-    banner-mode: LOG
+  application.name: Secret-Service
+  main.banner-mode: LOG
   datasource:
     url: jdbc:postgresql://localhost:5432/secrets
     username: postgres

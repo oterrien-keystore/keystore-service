@@ -1,6 +1,7 @@
 package com.ote.secret.rest;
 
 
+import com.ote.domain.secret.api.ISecretService;
 import com.ote.domain.secret.business.NotFoundException;
 import com.ote.secret.peristence.SecretEntityMapperService;
 import com.ote.secret.peristence.SecretJpaRepository;
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 public class SecretRestController {
 
     @Autowired
-    private SecretServiceAdapter secretServiceAdapter;
+    private ISecretService secretServiceAdapter;
 
     @Autowired
     private SecretPayloadMapperService secretPayloadMapperService;
@@ -38,22 +39,4 @@ public class SecretRestController {
     public SecretPayload findSecret(@PathVariable("name") String name) throws NotFoundException {
         return secretPayloadMapperService.convert(secretServiceAdapter.find(name));
     }
-
-    //region FOR TEST
-    /*@Autowired
-    private SecretJpaRepository secretJpaRepository;
-
-    @Autowired
-    private SecretEntityMapperService secretEntityMapperService;
-
-    @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseStatus(HttpStatus.OK)
-    @ResponseBody
-    public List<SecretPayload> findAllSecrets() {
-        return secretJpaRepository.findAll().stream().
-                map(entity -> secretEntityMapperService.convert(entity)).
-                map(secret -> secretPayloadMapperService.convert(secret)).
-                collect(Collectors.toList());
-    }*/
-    //endregion
 }
