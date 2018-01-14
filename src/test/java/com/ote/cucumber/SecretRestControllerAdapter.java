@@ -1,6 +1,6 @@
 package com.ote.cucumber;
 
-import com.ote.JsonUtils;
+import com.ote.common.JsonUtils;
 import com.ote.domain.secret.business.NotFoundException;
 import com.ote.secret.rest.SecretPayload;
 import org.springframework.beans.factory.annotation.Autowired;
