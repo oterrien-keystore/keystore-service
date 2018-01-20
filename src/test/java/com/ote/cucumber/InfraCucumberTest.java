@@ -1,7 +1,7 @@
 package com.ote.cucumber;
 
+import cucumber.CucumberExtension;
 import cucumber.api.CucumberOptions;
-import junit5.cucumber.CucumberExtension;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestFactory;
